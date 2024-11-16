@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: grafana/copyblocks 
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "r314-e189185"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -16,7 +16,7 @@ fullnameOverride: ""
 
 serviceAccount:
   # Specifies whether a service account should be created
-  create: true
+  create: false 
   # Automatically mount a ServiceAccount's API credentials?
   automount: true
   # Annotations to add to the service account
@@ -110,6 +110,7 @@ affinity: {}
 
 
 container_args:
+  - -source.backend=s3
   - -copy-period=24h
   - -destination.backend=s3
   - -dry-run=true
@@ -119,5 +120,8 @@ container_args:
   - -s3.destination.bucket-name=blah
   - -s3.destination.endpoint=blah
   - -s3.destination.secret-access-key=$(S3_DESTINATION_SECRET_KEY)
+  - -s3.source.endpoint=blahblah
+  - -s3.source.access-key-id=$(S3_DESTINATION_SECRET_KEY)
+  - -s3.source.secret-access-key=$(S3_DESTINATION_SECRET_KEY)
   - -source.backend=s3
 
