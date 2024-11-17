@@ -117,15 +117,14 @@ container_args:
   - -source.backend=s3
   - -copy-period=24h
   - -destination.backend=s3
-  - -dry-run=false
-  - -s3.source.bucket-name=copyblocks-test-destination-pmoses
+  - -dry-run=truef
+  - -s3.source.bucket-name=<source bucket>
   - -min-block-duration=13h
   - -s3.destination.access-key-id=$(S3_ACCESS_KEY)
-  - -s3.destination.bucket-name=copyblocks-test-destination-pmoses
+  - -s3.destination.bucket-name=<destination bucket>
   - -s3.destination.endpoint=s3.amazonaws.com
   - -s3.destination.secret-access-key=$(S3_SECRET_KEY)
   - -s3.source.endpoint=s3.amazonaws.com
   - -s3.source.access-key-id=$(S3_ACCESS_KEY)
   - -s3.source.secret-access-key=$(S3_SECRET_KEY)
-  - -source.backend=s3
 
