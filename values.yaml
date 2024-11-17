@@ -110,6 +110,8 @@ env:
       key: secret_access_key
       name: copyblocks-s3-secret 
 
+### your container arguments go here
+### exampler per cloud provider https://pkg.go.dev/github.com/grafana/mimir/tools/copyblocks#section-readme
 
 container_args:
   - -source.backend=s3
