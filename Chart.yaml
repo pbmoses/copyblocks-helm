@@ -1,6 +1,6 @@
 apiVersion: v2
 name: copyblocks
-description: A Helm chart to deploy copyblocks and use the args provided in values file
+description: A Helm chart to deploy copyblocks
 
 # A chart can be either an 'application' or a 'library' chart.
 #
