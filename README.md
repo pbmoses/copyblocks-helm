@@ -3,6 +3,8 @@
 ## This repository is the beginning of a Helm chart for copyblocks, a tool that can be utilized to copy Mimir s3 data from bucket to bucket. 
 Quite possibly it can be used to copy any blocks to any buckets. To date, I've only used with Mimir. 
 
+
+
 ## Pre-Reqs
 You will need a secret containing your s3 creds. Do not store secrets in Git. Sample secret below:
 ```
@@ -17,6 +19,11 @@ metadata:
 type: Opaque
 ```
 
+## Clone and run locally
+```
+git clone https://github.com/pbmoses/copyblocks-helm.git
+helm install copyblocks -f values.yaml -n copyblocks .
+```
 
 ## Working as of today but improvements to come. Sample logs:
 ```
