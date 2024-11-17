@@ -6,7 +6,7 @@ Quite possibly it can be used to copy any blocks to any buckets. To date, I've o
 
 
 ## Pre-Reqs
-You will need a secret containing your s3 creds. Do not store secrets in Git. Be mindful of extra characters if free forming the secret. use `echo -n secret | base64` Sample secret below:
+You will need a secret containing your s3 creds. Do not store secrets in Git. Be mindful of extra characters if creating the secret. Use `echo -n <secret string> | base64` to avoid extra chars. Sample secret below:
 ```
 apiVersion: v1
 data:
