@@ -3,6 +3,7 @@
 ## This repository is the beginning of a Helm chart for copyblocks, a tool that can be utilized to copy Mimir s3 data from bucket to bucket. 
 Quite possibly it can be used to copy any blocks to any buckets. To date, I've only used with Mimir. 
 
+We do not need a serviceAccount (bout you could use one) or other objects, just a simple deployment with  the custom values. 
 
 
 ## Pre-Reqs
