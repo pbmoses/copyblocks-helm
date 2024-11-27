@@ -29,9 +29,11 @@ jobs:
         uses: azure/setup-helm@v4
         env:
           GITHUB_TOKEN: "${{ secrets.CR_TOKEN }}"
-          CR_PACKAGE_WITH_INDEX: 'true'
+
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.6.0
+        with:
+          packages_with_index: 'true'
         env:
           CR_TOKEN: "${{ secrets.CR_TOKEN }}"
