@@ -2,8 +2,8 @@ apiVersion: v1
 entries:
   copyblocks:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2024-11-27T10:50:33.329993-08:00"
+    appVersion: 1.0.0
+    created: "2024-11-27T10:51:48.700431-08:00"
     description: A Helm chart to deploy copyblocks
     digest: 754e7b6eb98393fa74810f00864762c985929d985e7934c81c670f8b3dd52e2c
     name: copyblocks
@@ -11,4 +11,4 @@ entries:
     urls:
     - https://pbmoses.github.io/copyblocks-helm/copyblocks-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-27T10:50:33.327678-08:00"
+generated: "2024-11-27T10:51:48.698752-08:00"
