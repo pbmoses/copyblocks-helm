@@ -1,5 +1,5 @@
 name: Release Charts
-
+charts_dir: .
 on:
   push:
     branches:
