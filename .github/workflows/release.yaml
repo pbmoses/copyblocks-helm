@@ -6,8 +6,9 @@ on:
       - main
 
 jobs:
-  pcackage_with_index: true
   release:
+  package_with_index: true
+
     # depending on default permission settings for your org (contents being read-only or read-write for workloads), you will have to add permissions
     # see: https://docs.github.com/en/actions/security-guides/automatic-token-authentication#modifying-the-permissions-for-the-github_token
     permissions:
